@@ -66,6 +66,10 @@ body{
 .pagination-element:hover{
     cursor: pointer;
 }
+.pagination-element:hover .dot{
+    cursor: pointer;
+    background-color: wheat;
+}
 
 .dot{
     width: 50%;
