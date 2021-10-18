@@ -28,7 +28,8 @@ const mem5 = {
     text: 'Stay strong and u can do it'
 }
 
-const pages = document.querySelector('.pagination-container'); 
+const pages = document.querySelector('.pagination-container');
+const image = document.querySelector(".meme");
 
 pages.onclick = function showMem(event) {
     let target = event.target;
