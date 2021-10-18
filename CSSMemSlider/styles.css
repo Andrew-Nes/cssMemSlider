@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(105, 138, 138);
+}
+
+.content{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    position: relative;
+    width: fit-content;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.meme-container{
+    width: 100%;
+}
+
+.meme{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 90vw;
+    height: 85vh;
+}
+
+.text-and-pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-container{
+    width: calc(98% - 250px);
+    min-width: 300px;
+    font-size: 50px;
+    color: wheat;
+}
+
+.text{
+    margin: 0;
+}
+
+.pagination-container{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pagination-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.pagination-element:hover{
+    cursor: pointer;
+}
+
+.dot{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.dot.active{
+    border: 3px solid white;
+    background: none;
+}
+
+.dot.focus{
+    background-color: wheat;
+}
