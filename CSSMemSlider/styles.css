@@ -71,7 +71,7 @@ body{
     width: 50%;
     height: 50%;
     border-radius: 50%;
-    background-color: blue;
+    background-color: rgb(6, 78, 146);
 }
 
 .dot.active{
@@ -79,7 +79,7 @@ body{
     background: none;
 }
 
-.dot.focus{
+.dot:hover{
     background-color: wheat;
 }
 

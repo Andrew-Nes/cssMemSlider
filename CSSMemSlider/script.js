@@ -28,11 +28,12 @@ const mem5 = {
     text: 'Stay strong and u can do it.'
 }
 
-const pages = document.querySelector('.pagination-container');
+const pages = document.querySelector('.pagination-container'); 
 
 pages.onclick = function showMem(event) {
     let target = event.target;
     chooseMem(target);
+    dotStyleActive(target);
 } 
 
 function chooseMem(element)  {
@@ -43,4 +44,14 @@ function chooseMem(element)  {
     image.src = mem.imgSrc;
     message.textContent = mem.text;
 };
+
+function dotStyleActive(element){
+    document.querySelectorAll(".dot").forEach(el => el.classList.remove("active"));
+    if (element.classList == "pagination-element"){
+        element.childNodes[1].classList.add("active");
+    }
+    else if (element.classList == "dot"){
+        element.classList.add("active");
+    }
+}
 
